@@ -9,7 +9,14 @@ public class Order {
     // Number of pizzas
     int number_of_pizzas;
     // array of pizzas
+    Pizza[] pizzas;
 
+    // constructor
+
+    public Order(Customer customer, int number_of_pizzas) {
+        this.customer = customer;
+        this.number_of_pizzas = number_of_pizzas;
+    }
 
     // getters and setters
 
