@@ -3,7 +3,7 @@ package edu.wccnet.aurewhite;
 public class Pizza {
     //vars
     // size (s,m,l)
-    char size;
+    String size;
 
     // Number of toppings
     private String[] toppings;
@@ -12,27 +12,9 @@ public class Pizza {
 
     // constructor
 
-    public Pizza(char size, String[] toppings) {
+
+    public Pizza(String size, String[] toppings) {
         this.size = size;
-        this.toppings = toppings;
-    }
-
-    // getters and setters
-
-    // size
-    public char getSize() {
-        return size;
-    }
-
-    public void setSize(char size) {
-        this.size = size;
-    }
-    // toppings
-    public String[] getToppings() {
-        return toppings;
-    }
-
-    public void setToppings(String[] toppings) {
         this.toppings = toppings;
     }
 }

@@ -6,24 +6,35 @@ import java.util.Scanner; // 1. Import the Scanner class
 
 public class Main {
     public static void main(String[] args) {
-        //vars
-
+        // vars
+        // Customer info
+        String name;
+        String street;
+        String city;
+        String state;
+        String zip_code;
+        // pizza info
+        int number_of_pizzas;
         Scanner scanner = new Scanner(System.in);
-            //enter name
+            // enter name
         System.out.print("Enter your name: ");
-            //enter address
+            // enter address
         System.out.print("Enter your address: ");
         System.out.print("Enter your city: ");
         System.out.print("Enter your state: ");
         System.out.print("Enter your zip code: ");
 
-            //enter number of pizzas
+            // enter number of pizzas
         System.out.print("how many pizzas do you want to order?");
-                //add some sort of for loop to enter pizza specs
-        for (int i = 0; i < 1; i++) {
-            //Size
-            //Number of toppings
-            //Each topping
+        number_of_pizzas = scanner.nextInt();
+
+        // add some sort of for loop to enter pizza specs
+        for (int i = 0; i < number_of_pizzas; i++) {
+            // Size
+            System.out.print("please enter the size:");
+            String size = scanner.nextLine();
+            // Number of toppings
+            // Each topping
         }
 
 
