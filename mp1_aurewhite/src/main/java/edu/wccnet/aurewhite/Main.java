@@ -6,6 +6,7 @@ import java.util.Scanner; // 1. Import the Scanner class
 
 public class Main {
     public static void main(String[] args) {
+        //vars
 
         Scanner scanner = new Scanner(System.in);
             //enter name
@@ -19,10 +20,11 @@ public class Main {
             //enter number of pizzas
         System.out.print("how many pizzas do you want to order?");
                 //add some sort of for loop to enter pizza specs
-
-                //Size
-                //Number of toppings
-                //Each topping
+        for (int i = 0; i < 1; i++) {
+            //Size
+            //Number of toppings
+            //Each topping
+        }
 
 
 //        System.out.print("Enter your name: ");

@@ -13,9 +13,10 @@ public class Order {
 
     // constructor
 
-    public Order(Customer customer, int number_of_pizzas) {
+    public Order(Customer customer, int number_of_pizzas, Pizza[] pizzas) {
         this.customer = customer;
         this.number_of_pizzas = number_of_pizzas;
+        this.pizzas = pizzas;
     }
 
     // getters and setters
