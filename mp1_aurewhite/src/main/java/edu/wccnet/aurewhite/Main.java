@@ -9,9 +9,17 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
             //enter name
+        System.out.print("Enter your name: ");
             //enter address
+        System.out.print("Enter your address: ");
+        System.out.print("Enter your city: ");
+        System.out.print("Enter your state: ");
+        System.out.print("Enter your zip code: ");
+
             //enter number of pizzas
+        System.out.print("how many pizzas do you want to order?");
                 //add some sort of for loop to enter pizza specs
+
                 //Size
                 //Number of toppings
                 //Each topping
