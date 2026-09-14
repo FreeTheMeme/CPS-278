@@ -18,11 +18,20 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
             // enter name
         System.out.print("Enter your name: ");
+        name = scanner.nextLine();
             // enter address
+        System.out.print("Enter your street: ");
+        street = scanner.nextLine();
         System.out.print("Enter your address: ");
         System.out.print("Enter your city: ");
+        city = scanner.nextLine();
         System.out.print("Enter your state: ");
+        state = scanner.nextLine();
         System.out.print("Enter your zip code: ");
+        zip_code = scanner.nextLine();
+        // take user input and puts it in an Address object
+        Address address = new Address(street,city,state,zip_code);
+        new Customer(name,address);
 
             // enter number of pizzas
         System.out.print("how many pizzas do you want to order?");
