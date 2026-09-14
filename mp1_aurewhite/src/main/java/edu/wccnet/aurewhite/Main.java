@@ -17,6 +17,7 @@ public class Main {
         int number_of_pizzas;
         Scanner scanner = new Scanner(System.in);
             // enter name
+        System.out.print("please enter your information/n");
         System.out.print("Enter your name: ");
         name = scanner.nextLine();
             // enter address
@@ -32,7 +33,7 @@ public class Main {
         // take user input and puts it in an Address object
         Address address = new Address(street,city,state,zip_code);
         Customer customer = new Customer(name,address);
-
+        System.out.print(customer);
             // enter number of pizzas
         System.out.print("how many pizzas do you want to order?");
         number_of_pizzas = scanner.nextInt();
@@ -49,24 +50,20 @@ public class Main {
             // A place to store toppings
             String[] toppings = new String[number_of_toppings];
             // Each topping
-            System.out.print("choices are:");
+            System.out.print("choices are:\n");
             // topping loop
             for (int topping_slot = 0; topping_slot < number_of_toppings; topping_slot++) {
-                System.out.print("choose topping-"+ topping_slot);
-
+                System.out.print("choose topping-"+ topping_slot+1);
                 toppings[topping_slot] = scanner.nextLine();
             }
             // Create Pizza Object
             Pizza pizza = new Pizza(size,number_of_toppings,toppings);
-            pizzas[number_of_pizzas] =pizza;
+            pizzas[number_of_pizzas-1] =pizza;
         }
         //and to top it off (pun intended)
         //create a new Order object and print it
         Order order = new Order(customer,number_of_pizzas,pizzas);
-
-
-//        System.out.print("Enter your name: ");
-//        String name = scanner.nextLine();
+        System.out.print(order);
 
 
 
