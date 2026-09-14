@@ -24,11 +24,10 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" +
-                "customer=" + customer +
-                ", number_of_pizzas=" + number_of_pizzas +
-                ", pizzas=" + Arrays.toString(pizzas) +
-                "}\n";
+        return "Order Confirmation:\n" +
+                "customer=" + customer + "\n" +
+                number_of_pizzas + " pizza/s:"+ "\n" +
+                Arrays.toString(pizzas);
     }
 
     // getters and setters

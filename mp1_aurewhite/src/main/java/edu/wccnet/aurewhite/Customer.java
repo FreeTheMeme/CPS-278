@@ -17,7 +17,7 @@ public class Customer {
         return "Customer{" +
                 "name='" + name + '\'' +
                 ", address=" + address +
-                "}\n";
+                "}";
     }
 
     // getters and setters

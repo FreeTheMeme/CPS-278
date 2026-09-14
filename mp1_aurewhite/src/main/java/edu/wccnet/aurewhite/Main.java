@@ -33,9 +33,8 @@ public class Main {
         // take user input and puts it in an Address object
         Address address = new Address(street,city,state,zip_code);
         Customer customer = new Customer(name,address);
-        System.out.print(customer);
-            // enter number of pizzas
-        System.out.print("how many pizzas do you want to order?");
+        // enter number of pizzas
+        System.out.print("how many pizzas do you want to order?\n");
         number_of_pizzas = scanner.nextInt();
         scanner.nextLine(); // Consume left over newline
         // var to store pizzas
@@ -53,6 +52,17 @@ public class Main {
             String[] toppings = new String[number_of_toppings];
             // Each topping
             System.out.print("choices are:\n");
+            System.out.println("""
+                    Mushroom
+                    Pineapple
+                    Zucchini
+                    Tomato
+                    Spinach
+                    Artichoke
+                    Green Pepper
+                    pepperoni
+                    bacon
+                    """);
             // topping loop
             for (int topping_slot = 0; topping_slot < number_of_toppings; topping_slot++) {
                 System.out.println("choose topping-"+ (topping_slot+1));
