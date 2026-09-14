@@ -31,12 +31,13 @@ public class Main {
         zip_code = scanner.nextLine();
         // take user input and puts it in an Address object
         Address address = new Address(street,city,state,zip_code);
-        new Customer(name,address);
+        Customer customer = new Customer(name,address);
 
             // enter number of pizzas
         System.out.print("how many pizzas do you want to order?");
         number_of_pizzas = scanner.nextInt();
-
+        // var to store pizzas
+        Pizza[] pizzas = new Pizza[number_of_pizzas];
         // add some sort of for loop to enter pizza specs
         for (int i = 0; i < number_of_pizzas; i++) {
             // Size
@@ -55,7 +56,13 @@ public class Main {
 
                 toppings[topping_slot] = scanner.nextLine();
             }
+            // Create Pizza Object
+            Pizza pizza = new Pizza(size,number_of_toppings,toppings);
+            pizzas[number_of_pizzas] =pizza;
         }
+        //and to top it off (pun intended)
+        //create a new Order object and print it
+        Order order = new Order(customer,number_of_pizzas,pizzas);
 
 
 //        System.out.print("Enter your name: ");
