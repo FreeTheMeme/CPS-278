@@ -17,7 +17,7 @@ public class Main {
         int number_of_pizzas;
         Scanner scanner = new Scanner(System.in);
             // enter name
-        System.out.print("please enter your information/n");
+        System.out.print("please enter your information\n");
         System.out.print("Enter your name: ");
         name = scanner.nextLine();
             // enter address
@@ -43,7 +43,7 @@ public class Main {
         // add some sort of for loop to enter pizza specs
         for (int i = 0; i < number_of_pizzas; i++) {
             // Size
-            System.out.print("please enter the size:\n");
+            System.out.print("please enter the size for pizza-"+(i+1)+"\n");
             String size = scanner.nextLine();
             // Number of toppings
             System.out.println("please enter number of toppings:");
@@ -55,12 +55,12 @@ public class Main {
             System.out.print("choices are:\n");
             // topping loop
             for (int topping_slot = 0; topping_slot < number_of_toppings; topping_slot++) {
-                System.out.println("choose topping-"+ topping_slot+1);
+                System.out.println("choose topping-"+ (topping_slot+1));
                 toppings[topping_slot] = scanner.nextLine();
             }
             // Create Pizza Object
             Pizza pizza = new Pizza(size,number_of_toppings,toppings);
-            pizzas[number_of_pizzas-1] =pizza;
+            pizzas[i] =pizza;
         }
         //and to top it off (pun intended)
         //create a new Order object and print it
