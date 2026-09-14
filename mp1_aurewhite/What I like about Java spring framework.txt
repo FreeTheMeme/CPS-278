@@ -1,0 +1,3 @@
+And one of the things I like about Java Spring's framework is the database and HTML web thing
+from my limited knowledge of Java Spring, it seems like you can make websites and APIs and all that.
+It kind of reminds me of Flask from Python.
