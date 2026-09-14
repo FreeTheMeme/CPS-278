@@ -10,6 +10,15 @@ public class Customer {
         this.name = name;
         this.address = address;
     }
+    //to string
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "name='" + name + '\'' +
+                ", address=" + address +
+                "}\n";
+    }
 
     // getters and setters
 }

@@ -37,23 +37,25 @@ public class Main {
             // enter number of pizzas
         System.out.print("how many pizzas do you want to order?");
         number_of_pizzas = scanner.nextInt();
+        scanner.nextLine(); // Consume left over newline
         // var to store pizzas
         Pizza[] pizzas = new Pizza[number_of_pizzas];
         // add some sort of for loop to enter pizza specs
         for (int i = 0; i < number_of_pizzas; i++) {
             // Size
-            System.out.print("please enter the size:");
+            System.out.print("please enter the size:\n");
             String size = scanner.nextLine();
             // Number of toppings
-            System.out.print("please enter number of toppings:");
+            System.out.println("please enter number of toppings:");
             int number_of_toppings = scanner.nextInt();
+            scanner.nextLine(); // Consume left over newline
             // A place to store toppings
             String[] toppings = new String[number_of_toppings];
             // Each topping
             System.out.print("choices are:\n");
             // topping loop
             for (int topping_slot = 0; topping_slot < number_of_toppings; topping_slot++) {
-                System.out.print("choose topping-"+ topping_slot+1);
+                System.out.println("choose topping-"+ topping_slot+1);
                 toppings[topping_slot] = scanner.nextLine();
             }
             // Create Pizza Object

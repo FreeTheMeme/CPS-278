@@ -1,5 +1,7 @@
 package edu.wccnet.aurewhite;
 
+import java.util.Arrays;
+
 public class Order {
     // basically, the class to wrap all the other classes
     // into one thing it takes the customer and pizzas
@@ -17,6 +19,16 @@ public class Order {
         this.customer = customer;
         this.number_of_pizzas = number_of_pizzas;
         this.pizzas = pizzas;
+    }
+    // tostr
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "customer=" + customer +
+                ", number_of_pizzas=" + number_of_pizzas +
+                ", pizzas=" + Arrays.toString(pizzas) +
+                "}\n";
     }
 
     // getters and setters

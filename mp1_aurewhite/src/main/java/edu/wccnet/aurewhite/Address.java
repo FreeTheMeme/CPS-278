@@ -16,6 +16,17 @@ public class Address {
         this.state = state;
         this.zip_code = zip_code;
     }
+    //to string
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "street='" + street + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", zip_code='" + zip_code + '\'' +
+                "}\n";
+    }
 
     // getters and setters
 
