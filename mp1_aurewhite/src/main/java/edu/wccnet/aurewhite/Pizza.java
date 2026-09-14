@@ -4,17 +4,20 @@ public class Pizza {
     //vars
     // size (s,m,l)
     String size;
-
     // Number of toppings
-    private String[] toppings;
-    // and finally toppings I'm not sure how we're gonna store all the toppings,
-    // one long string, maybe an array of string strings
+    int number_of_toppings;
+    //toppings array
+    String[] toppings;
+
 
     // constructor
 
-
-    public Pizza(String size, String[] toppings) {
+    public Pizza(String size, int number_of_toppings, String[] toppings) {
         this.size = size;
+        this.number_of_toppings = number_of_toppings;
         this.toppings = toppings;
+    }
+    public void add_topping_info(int topping_slot, String topping_name){
+        toppings[topping_slot] = topping_name;
     }
 }

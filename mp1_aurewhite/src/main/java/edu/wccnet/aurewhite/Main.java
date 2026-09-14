@@ -43,7 +43,18 @@ public class Main {
             System.out.print("please enter the size:");
             String size = scanner.nextLine();
             // Number of toppings
+            System.out.print("please enter number of toppings:");
+            int number_of_toppings = scanner.nextInt();
+            // A place to store toppings
+            String[] toppings = new String[number_of_toppings];
             // Each topping
+            System.out.print("choices are:");
+            // topping loop
+            for (int topping_slot = 0; topping_slot < number_of_toppings; topping_slot++) {
+                System.out.print("choose topping-"+ topping_slot);
+
+                toppings[topping_slot] = scanner.nextLine();
+            }
         }
 
 
