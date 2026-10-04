@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bbaec7e-13fa-4d80-9b6f-f7e945e6b176" name="Changes" comment="IoCDemo Project vid 1 done">
+    <list default="true" id="9bbaec7e-13fa-4d80-9b6f-f7e945e6b176" name="Changes" comment="Check Point: IoCDemo Project done 2">
+      <change beforePath="$PROJECT_DIR$/../IoCDemo-Project 2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IoCDemo-Project 2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IoCDemo-Project 2/src/main/java/edu/wccnet/aurewhite/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IoCDemo-Project 2/src/main/java/edu/wccnet/aurewhite/IocDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../IoCDemo-Project 2/src/main/java/edu/wccnet/aurewhite/IocDemo2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +108,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="IoCDemo Project start" />
     <MESSAGE value="IoCDemo Project vid 1 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="IoCDemo Project vid 1 done" />
+    <MESSAGE value="Check Point: IoCDemo Project done 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Check Point: IoCDemo Project done 2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
