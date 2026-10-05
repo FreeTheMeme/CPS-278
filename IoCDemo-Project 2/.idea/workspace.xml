@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bbaec7e-13fa-4d80-9b6f-f7e945e6b176" name="Changes" comment="Check Point: IoCDemo2 Project done">
+    <list default="true" id="9bbaec7e-13fa-4d80-9b6f-f7e945e6b176" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +116,8 @@
     <MESSAGE value="IoCDemo Project start" />
     <MESSAGE value="IoCDemo Project vid 1 done" />
     <MESSAGE value="Check Point: IoCDemo2 Project done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Check Point: IoCDemo2 Project done" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
