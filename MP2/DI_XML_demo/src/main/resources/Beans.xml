@@ -11,6 +11,14 @@
 		<constructor-arg name="yearBuilt" value="1965"></constructor-arg>
 		<property name="zipCode" value="48105"></property>
 		<property name="enrollment" value="20000"></property>
+		<property name="CollegeService" ref="CommunityCollegeService"></property>
 
 	</bean>
+	<bean id="CommunityCollegeService" class="edu.wccnet.aurewhite.DI_XML_demo.CommunityCollegeService" ></bean>
+	<bean id="UniversityService" class="edu.wccnet.aurewhite.DI_XML_demo.UniversityService" ></bean>
+	<bean id="Finaid" class="edu.wccnet.aurewhite.DI_XML_demo.Finaid">
+		<constructor-arg name="college" ref="college"></constructor-arg>
+		<constructor-arg name="finaidService" ref="grants"></constructor-arg>
+	</bean>
+	<bean id="grants" class="edu.wccnet.aurewhite.DI_XML_demo.Grants"></bean>
 </beans>
