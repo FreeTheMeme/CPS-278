@@ -1,11 +1,10 @@
-package edu.wccnet.aurewhite;
+package edu.wccnet.aurewhite.DI_XML_demo;
 
 public class College {
-    //vars
     private String collageName;
     private int yearBuilt;
     private String zipCode;
-    private int Enrollment;
+    private int enrollment;
 
     public College(String collageName, int yearBuilt) {
         this.collageName = collageName;
@@ -18,7 +17,15 @@ public class College {
                 "collageName='" + collageName + '\'' +
                 ", yearBuilt=" + yearBuilt +
                 ", zipCode='" + zipCode + '\'' +
-                ", Enrollment=" + Enrollment +
+                ", enrollment=" + enrollment +
                 '}';
+    }
+
+    public void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
+    }
+
+    public void setEnrollment(int enrollment) {
+        this.enrollment = enrollment;
     }
 }
