@@ -17,10 +17,7 @@
 	</bean>
 	<bean id="CommunityCollegeService" class="edu.wccnet.aurewhite.DI_XML_demo.CommunityCollegeService" ></bean>
 	<bean id="UniversityService" class="edu.wccnet.aurewhite.DI_XML_demo.UniversityService" ></bean>
-	<bean id="Finaid" class="edu.wccnet.aurewhite.DI_XML_demo.Finaid">
-		
-		
-	</bean>
-	<bean id="grants" class="edu.wccnet.aurewhite.DI_XML_demo.Grants"></bean>
+
 	<context:annotation-config></context:annotation-config>
+	<context:component-scan base-package="edu.wccnet.aurewhite.DI_XML_demo"></context:component-scan>
 </beans>

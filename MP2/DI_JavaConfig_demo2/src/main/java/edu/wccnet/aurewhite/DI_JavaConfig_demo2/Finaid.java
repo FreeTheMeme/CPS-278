@@ -1,19 +1,17 @@
-package edu.wccnet.aurewhite.DI_XML_demo;
+package edu.wccnet.aurewhite.DI_JavaConfig_demo2;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component("finaid")
 public class Finaid {
-    @Autowired
     private College college;
-    @Autowired
     private FinaidService finaidService;
 
-//    public Finaid(College college, FinaidService finaidService) {
-//        this.college = college;
-//        this.finaidService = finaidService;
-//    }
+    public Finaid(College college, FinaidService finaidService) {
+        this.college = college;
+        this.finaidService = finaidService;
+    }
+
     public void displayFinaid(){
         System.out.println("You received "+ finaidService.getFinaidtype()+" from "+college.getCollageName());
     }

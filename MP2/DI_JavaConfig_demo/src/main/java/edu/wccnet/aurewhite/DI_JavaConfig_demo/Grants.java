@@ -1,4 +1,4 @@
-package edu.wccnet.aurewhite.DI_XML_demo;
+package edu.wccnet.aurewhite.DI_JavaConfig_demo;
 
 import org.springframework.stereotype.Component;
 

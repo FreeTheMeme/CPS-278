@@ -1,8 +1,6 @@
-package edu.wccnet.aurewhite.DI_XML_demo;
+package edu.wccnet.aurewhite.DI_JavaConfig_demo2;
 
-import org.springframework.stereotype.Component;
 
-@Component
 public class Grants implements FinaidService{
     @Override
     public String getFinaidtype() {
